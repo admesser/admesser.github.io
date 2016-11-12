@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> My Sample HTML page</title>
+    <style> type="text/css" media="screen">
+</style>
+</head>
+<style>
+    h1 {
+      font-size: 20px;
+      border-bottom; 1x solid #cccccc;
+    }
+      p {
+        padding: 10px;
+        background-color: papayaWhip;
+        }
+        .special {
+          border: 1px solid green;
+                  }
+        #user-name {
+          font-weight: bold;
+                  }
+    }
+    </style>
+
+  <body>
+    <h1>Hello <em>World!</em></h1>
+    <p class="special">My name is
+      <span id="user-name">Adam.</span>
+            </p>
+    <p>I like:</p>
+    <ul>
+      <li>Polka Dots</li>
+      <li>Soccer</li>
+      <li>Programming</li>
+    </ul>
+    <p> I hear RailsBridge needs volunteers, should I volunteer? :) </p>
+
+    <script>
+    function replaceName() {
+    var myNewName = window.prompt('Pick a new name!');
+    document.getElementById('user-name').innerHTML = myNewName;
+  }
+
+  document.onclick = replaceName;
+</script>
+  </body>
+</html>
